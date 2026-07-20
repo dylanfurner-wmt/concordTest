@@ -1,0 +1,9 @@
+configuration:
+  runtime: "concord-v2"
+  arguments:
+    myName: Dylan #Put your name here
+  debug: true
+  
+flows:
+  default:
+  - log: "Say hello to ${myName}"
