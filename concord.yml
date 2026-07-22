@@ -6,4 +6,12 @@ configuration:
   
 flows:
   default:
-  - log: "Say hello to ${myName}"
+  - log: "Today's breakfast options include:"
+  - call: breakfast
+    loop:
+      items:
+        - Eggs
+        - Orange Juice
+        - Toast and marmalade
+  breakfast:
+  - log: ${item}
